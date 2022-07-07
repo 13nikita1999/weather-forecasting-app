@@ -1,0 +1,134 @@
+*{
+margin :0;
+padding : 0;
+box-sizing : boder-box;
+}
+body{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("./images/back.webp");
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    background-size: cover;
+}
+h1{
+    font-size: 30pt;
+    color: white;
+    padding-top:30px;
+    text-align: center;
+}
+.app-main{
+    width: 50vh;
+    margin: 30px auto;
+    background-color: rgba(240, 248, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+.app-main > *{
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 93%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 6px;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.input-box:focus{
+    background-color: rgb(255, 255, 255);
+}
+.weather-body{
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 50vh;
+}
+.location-detail{
+    font-weight: bold;
+}
+.weather-status{
+    padding: 20px;
+}
+.temp{
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0px 40px 0px;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+.min-max, .weather{
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+/* ----------------------Media Query  */
+@media screen and (max-width:320px) {
+    h1{
+        font-size: 20pt;
+    }
+    .app-main{
+        width: 40vh;
+        margin: 15px auto;
+    }
+    .input-box{
+        width: 90%;
+    }
+    .weather-body{
+        padding: 10px;
+        height: 50vh;
+    }
+    .location-detail{
+        font-size: 14px;
+        padding: 0px;
+    }
+    .temp{
+        font-size: 30pt;
+        margin: 0px;
+    }
+    .min-max, .weather{
+        font-size: 10pt;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:768px) {
+    h1{
+        font-size: 24pt;
+    }
+    .app-main{
+        width: 45vh;
+        margin: 15px auto;
+    }
+    .weather-body{
+        padding: 10px;
+        height: 47vh;
+    }
+    .temp{
+        font-size: 30pt;
+        margin: 5px;
+    }
+}
+@media screen and (min-width:369px) and (max-width:1024px) {
+    h1{
+        font-size: 26pt;
+    }
+    .app-main{
+        width: 48vh;
+        margin: 15px auto;
+    }
+    .weather-body{
+        padding: 10px;
+        height: 47vh;
+    }
+    .temp{
+        font-size: 32pt;
+        margin: 5px;
+    }
+}
